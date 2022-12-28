@@ -9,5 +9,13 @@ function header() {
     content.appendChild(header);
 
 }
-
 header();
+
+function sidebar() {
+    const sidebar = document.createElement('div');
+    sidebar.className = "sidebar";
+
+    content.appendChild(sidebar);
+}
+
+sidebar();
