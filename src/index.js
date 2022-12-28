@@ -7,7 +7,6 @@ function header() {
     header.className = "header";
 
     content.appendChild(header);
-
 }
 header();
 
@@ -17,5 +16,12 @@ function sidebar() {
 
     content.appendChild(sidebar);
 }
-
 sidebar();
+
+function main() {
+    const main = document.createElement('div');
+    main.className = "main";
+
+    content.appendChild(main);
+}
+main();
