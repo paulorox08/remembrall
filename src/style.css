@@ -24,6 +24,11 @@ body {
     grid-area: header;
 }
 
+.title {
+    color: white;
+    
+}
+
 .sidebar {
     width: 100%;
     height: auto;
