@@ -32,6 +32,7 @@ function sidebar() {
     upcoming.appendChild(upcomingText);
 
     const projects = document.createElement('div');
+    projects.className = "projects";
     sidebar.appendChild(projects);
 
     const projectsIcon = document.createElement('span');
@@ -43,6 +44,25 @@ function sidebar() {
     projectsText.className = "projectsText";
     projectsText.innerText = "Projects";
     projects.appendChild(projectsText);
+
+    const random = document.createElement('div');
+    random.className = "random";
+    random.innerText = "TESTING";
+    sidebar.appendChild(random);
+
+    var i;
+
+    for (i = 0; i < projects.length; i ++) {
+        projects[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const random = document.querySelector('.random');
+            if (random.style.display == "block")  {
+                random.style.display = "none";
+            } else {
+                random.style.display = "block";
+            }
+        });
+    }
 }
 sidebar();
 
